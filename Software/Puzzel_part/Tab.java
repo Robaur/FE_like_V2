@@ -39,6 +39,7 @@ public class Tab{       // private is like to the encapulation -- the choise of 
     System.out.print("\n");
   }
 
+
   public void print_plat(Character boy){
     for(int y=0;y<this.Size;y++){
       for(int x=0;x<this.Size;x++){
@@ -50,10 +51,13 @@ public class Tab{       // private is like to the encapulation -- the choise of 
     System.out.print("\n");
   }
 
+
   public int detec_Char_position(Character boy, int x,int y){
     if(x==boy.gettingX() && y==boy.gettingY()){return(1);}
     return(0);
   }
+
+
   public int gettingTabSize(){
     return(this.Size);
   }
@@ -63,4 +67,4 @@ public class Tab{       // private is like to the encapulation -- the choise of 
 // Local.ROOT
 // check the equality is not the best because if they are a problem
 // @Override back word compatibility, should be usee to cast an now string
-// key words is extend 
+// key words is extend
