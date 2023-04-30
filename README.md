@@ -28,4 +28,5 @@ Game
 |
 |.Turn
 |
-|Save(.Turn)[]
+|Save(.Turn)[save the stat of the game]
+|Charge(.Turn)[charge an old stat of the game]
