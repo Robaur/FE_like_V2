@@ -5,12 +5,20 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
-public class Main{
-  public static void main(){
-  this.Gaming=Game();
-  this.Gaming.MomentGame.Tab.PrintTab();
+private class Player{
 
+public Player(String Name){
+  this.Name=Name;
+  this.Type=1;
 }
 
-private Game Gaming;
+public Player(){
+  this.Name="I.A";
+  this.Type=0;
+}
+
+
+private String Name;
+private int Type; // 0 is IA and 1 is PJ
+private Character[] Team;
 }
