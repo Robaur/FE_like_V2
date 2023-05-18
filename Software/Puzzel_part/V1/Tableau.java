@@ -16,7 +16,8 @@ public Tableau(){
       this.Tab[i][j]=Case();
     }
   }
-  this.size={20,20};
+  this.size[0]=20;
+  this.size[1]=20;
 }
 
 public Tableau(int n){
@@ -25,7 +26,9 @@ public Tableau(int n){
       this.Tab[i][j]=Case();
     }
   }
-  this.size={n,n};
+  this.size[0]=n;
+  this.size[1]=n;
+}
 }
 
 public Tableau(int n,int m){
@@ -34,7 +37,9 @@ public Tableau(int n,int m){
       this.Tab[i][j]=Case.Case();
       }
     }
-    this.size={n,m};
+    this.size[0]=n;
+    this.size[1]=m;
+  }
   }
 
 
@@ -49,5 +54,5 @@ public PrintTab(){
 
 
 private Case[][] Tab;
-private double size;
+private int[1] size;
 }
