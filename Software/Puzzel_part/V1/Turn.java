@@ -3,7 +3,7 @@ public class Turn{
 
 public Turn(){
     this.NbTurn=0;
-
+    this.Tab=Tabeau();
 }
 
 

@@ -10,7 +10,7 @@ private class Tableau{
 
 //================================================= THIS IS ALL THE WAY TO BUILD A CASE ============================
 
-private Tableau(){
+public Tableau(){
   for( int i;i<20;i++){
     for( int j;j<20;j++){
       this.Tab[i][j]=Case();
@@ -19,7 +19,7 @@ private Tableau(){
   this.size={20,20};
 }
 
-private Tableau(int n){
+public Tableau(int n){
   for( int i;i<n;i++){
     for( int j;j<n;j++){
       this.Tab[i][j]=Case();
@@ -28,7 +28,7 @@ private Tableau(int n){
   this.size={n,n};
 }
 
-private Tableau(int n,int m){
+public Tableau(int n,int m){
   for(int i;i<n;i++){
     for(int j;j<m;j++){
       this.Tab[i][j]=Case.Case();

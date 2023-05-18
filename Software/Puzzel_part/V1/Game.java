@@ -1,9 +1,8 @@
 public class Game{
 
 public Game(){
-  This.NameGame="FE_Like";
-
-
+  this.NameGame="FE_Like";
+  this.turn=Turn();
 }
 
 public End_Game(){}

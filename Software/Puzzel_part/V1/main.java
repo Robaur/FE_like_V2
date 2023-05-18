@@ -6,15 +6,11 @@
 //
 //============================================================================//
 public class main{
+  public static void main(){
+  this.Gaming=Game();
+  this.Gaming.MomentGame.Tab.PrintTab();
 
+}
 
-
-
-
-
-
-
-
-
-  
+private Game Gaming;
 }
