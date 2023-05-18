@@ -44,7 +44,7 @@ private chagType (int type){
 
 
 public PrintCase(){
-
+  System.out.print("["+this.type+"]");
 }
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
