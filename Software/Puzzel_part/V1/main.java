@@ -13,6 +13,7 @@ public class main{
   
   Tableau Tab = new Tableau();
   Tab.PrintTab();
+  
 
 }
 

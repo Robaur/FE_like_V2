@@ -7,21 +7,38 @@
 //============================================================================//
 private class Character{
 
-private Character(String Name){
+
+//================================================= THIS IS ALL THE WAY TO BUILD A CHARACTER ============================
+
+
+public Character(String Name){
   this.Name=Name;
 }
 
+public Character(){
+	this.Name="Igor";
+	this.rep='I';
+	}
+	
+
+//================================================= THIS IS ALL THE FUNCTION ============================
+
+
+public ReturnREP(){
+	return(this.rep);	
+	}
 
 
 
 
-
+//================================================== THIS IS ALL THE ARGUMENT =====================================
 
   private String Name;
-  private School school;
-  private Statistique Stat;
-  private Case Position;
-  private SkillPool skills;
-  private Persona Perso;
-  private Stuff stuff; 
+  private char rep;
+  //private School school;
+  //private Statistique Stat;
+  //private Case Position; SEMBLE ETRE PAS MAL DE LA MERDE >CETTE LIGNE
+  //private SkillPool skills;
+  //private Persona Perso;
+  //private Stuff stuff; 
 }

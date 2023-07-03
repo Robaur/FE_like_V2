@@ -49,6 +49,11 @@ public Case(int x, int y,int z,int type){
 //}
 
 //================================================= THIS IS ALL THE FUNCTION ============================
+public AttribBOY(Character BOY){
+	this.Boy=BOY;
+	this.type=BOY.ReturnREP();
+	}
+
 
 /*
 private chagType (int type){
@@ -68,5 +73,6 @@ public PrintCase(){
 
 public int[] cordonner;
 public int type; // this is the tape of the ground   change in private 
+public Character Boy;
 
 }
