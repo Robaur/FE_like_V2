@@ -13,13 +13,11 @@ public class Tableau{
 public Tableau(){
 	this.Tab = new Case[20][20];
   for( int i=0;i<20;i++){
-	  System.out.println("\n"); // useless    debug
-	  System.out.println(i); // debug
     for( int j=0;j<20;j++){
-		System.out.println(j);    // debug
 		this.Tab[j][i] = new Case(j,i);
     }
   }
+  this.size = new int[2];
   this.changeIntSize(20,0);
   this.changeIntSize(20,1);
 }
@@ -30,6 +28,7 @@ public Tableau(int n){
       this.Tab[i][j]=new Case();
     
   }
+  this.size = new int[2];
   this.changeIntSize(n,0);
   this.changeIntSize(n,1);
 }
@@ -41,6 +40,7 @@ public Tableau(int n,int m){
       this.Tab[i][j]=new Case();
       }
     }
+    this.size = new int[2];
     this.changeIntSize(n,0);
     this.changeIntSize(m,1);
   }
@@ -50,8 +50,9 @@ public Tableau(int n,int m){
 //================================================= THIS IS ALL THE METHODE ============================
 public void PrintTab(){
   for(int i=0;i<this.size[0];i++){
+	  System.out.print("\n");
     for(int j=0;j<this.size[1];j++){
-        System.out.println("["+this.Tab[i][j].type+"]");
+        System.out.print("["+this.Tab[i][j].type+"]");
     }
   }
 }
