@@ -8,51 +8,61 @@
 
 public class Tableau{
 
-//================================================= THIS IS ALL THE WAY TO BUILD A CASE ============================
+//================================================= THIS IS ALL THE WAY TO BUILD A TABLEAU ============================
 
 public Tableau(){
-  for( int i;i<20;i++){
-    for( int j;j<20;j++){
-      this.Tab[i][j]=Case();
+	this.Tab = new Case[20][20];
+  for( int i=0;i<20;i++){
+	  System.out.println("\n"); // useless    debug
+	  System.out.println(i); // debug
+    for( int j=0;j<20;j++){
+		System.out.println(j);    // debug
+		this.Tab[j][i] = new Case(j,i);
     }
   }
-  this.size[0]=20;
-  this.size[1]=20;
+  this.changeIntSize(20,0);
+  this.changeIntSize(20,1);
 }
 
 public Tableau(int n){
-  for( int i;i<n;i++){
-    for( int j;j<n;j++){
-      this.Tab[i][j]=Case();
-    }
+  for( int i=0;i<n;i++){
+    for( int j=0;j<n;j++){
+      this.Tab[i][j]=new Case();
+    
   }
-  this.size[0]=n;
-  this.size[1]=n;
+  this.changeIntSize(n,0);
+  this.changeIntSize(n,1);
 }
 }
 
 public Tableau(int n,int m){
-  for(int i;i<n;i++){
-    for(int j;j<m;j++){
-      this.Tab[i][j]=Case.Case();
+  for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+      this.Tab[i][j]=new Case();
       }
     }
-    this.size[0]=n;
-    this.size[1]=m;
+    this.changeIntSize(n,0);
+    this.changeIntSize(m,1);
   }
-  }
+  
 
 
-//================================================= THIS IS ALL THE FUNCTION ============================
-public PrintTab(){
-  for(int i;i<this.size[0];i++){
-    for(int j;j<this.size[1];j++){
-        System.out.Print("[]"+this.Case[i][j].type+"]");
+//================================================= THIS IS ALL THE METHODE ============================
+public void PrintTab(){
+  for(int i=0;i<this.size[0];i++){
+    for(int j=0;j<this.size[1];j++){
+        System.out.println("["+this.Tab[i][j].type+"]");
     }
   }
 }
 
+public void changeIntSize(int n,int sizeplace){
+	this.size[sizeplace]=n;
+	
+	}
 
-private Case[][] Tab;
-private int[1] size;
+
+
+public Case[][] Tab;
+private int[] size;
 }

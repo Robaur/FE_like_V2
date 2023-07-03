@@ -5,12 +5,16 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
-public class Main{
-  public static void main(){
-  this.Gaming=Game();
-  this.Gaming.MomentGame.Tab.PrintTab();
+public class main{
+	
+  public static void main(String []args){
+  //this.Gaming=new Game();
+  //this.Gaming.MomentGame.Tab.PrintTab();
+  
+  Tableau Tab = new Tableau();
+  Tab.PrintTab();
 
 }
 
-private Game Gaming;
+//private Game Gaming;
 }
