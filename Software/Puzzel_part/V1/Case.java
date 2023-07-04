@@ -18,6 +18,7 @@ public Case(){
   this.cordonner[1]=0;
   this.cordonner[2]=0;
   this.type='O';
+  this.Boy =new Character();
 }
 
 public Case(int x, int y){
@@ -27,6 +28,7 @@ public Case(int x, int y){
   this.cordonner[1]=y;
   this.cordonner[2]=0;
   this.type='O';
+  this.Boy =new Character();
 }
 
 public Case(int x, int y,int z){
@@ -34,7 +36,7 @@ public Case(int x, int y,int z){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=z;
-  this.type='O';
+  this.Boy =new Character();
 }
 public Case(int x, int y,int z,char type){
   this.cordonner= new int[3];
@@ -42,6 +44,7 @@ public Case(int x, int y,int z,char type){
   this.cordonner[1]=y;
   this.cordonner[2]=z;
   this.type=type;
+  this.Boy =new Character();
 }
 
 //public Case(int[2] posit,int class){
@@ -58,9 +61,10 @@ public void AttribBOY(Character BOY){
 
 
 public void ChangeCaseCharact(Case Out){  // assez proche de AttribBOY !!!!!!!
-	Out.Character.CopyCharacter(this.Character);
-	Character Remplissage = new Character();
-	this.Character.CopyCharacter(Remplissage);
+	Out.Boy.CopyCharacter(this.Boy);
+	Character Remplissage = new Character(); // Ne marche pas
+	this.Boy.CopyCharacter(Remplissage);
+	
 	}
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================

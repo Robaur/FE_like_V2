@@ -52,7 +52,7 @@ public void PrintTab(){
   for(int i=0;i<this.size[0];i++){
 	  System.out.print("\n");
     for(int j=0;j<this.size[1];j++){
-		System.out.print("["+this.Tab[i][j].type+"]");
+		System.out.print("["+this.Tab[i][j].Boy.ReturnREP()+"]");
     }
   }
   System.out.print("\n");

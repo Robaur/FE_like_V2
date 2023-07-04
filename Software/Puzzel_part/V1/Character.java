@@ -37,6 +37,9 @@ public char ReturnREP(){
 public String ReturnName(){
 	return(this.Name);
 	}	
+	
+	
+	
 
 public void CopyCharacter(Character Copied){
 	this.Name=Copied.ReturnName();
