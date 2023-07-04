@@ -13,6 +13,10 @@ public class main{
   
   Tableau Tab = new Tableau();
   Tab.PrintTab();
+  Character Igor = new Character('I');
+  Tab.PoppingChar(1,1,Igor);
+  Tab.PrintTab();
+  Tab.Depla_1_BOY(1,1,1);
   
 
 }

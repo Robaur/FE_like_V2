@@ -52,16 +52,38 @@ public void PrintTab(){
   for(int i=0;i<this.size[0];i++){
 	  System.out.print("\n");
     for(int j=0;j<this.size[1];j++){
-        this.Tab[i][j]){System.out.print("["+this.Tab[i][j].type+"]");
+		System.out.print("["+this.Tab[i][j].type+"]");
     }
   }
+  System.out.print("\n");
 }
 
 public void changeIntSize(int n,int sizeplace){
 	this.size[sizeplace]=n;
 	
 	}
+public void PoppingChar(int x,int y,Character BOY){
+	this.Tab[x][y].AttribBOY(BOY);
+	}
 
+public void Depla_1_BOY(int x, int y,int order){ 
+	switch (order){
+		case 0: // go north 
+			this.Tab[x][y].ChangeCaseCharact(this.Tab[x][y+1]);
+			break;
+		case 1: // go left 
+			this.Tab[x][y].ChangeCaseCharact(this.Tab[x-1][y]);
+			break;
+		case 2: // go south 
+			this.Tab[x][y].ChangeCaseCharact(this.Tab[x][y-1]);
+			break;
+		default: // go right
+			this.Tab[x][y].ChangeCaseCharact(this.Tab[x+1][y]);
+			break;
+		}
+	}
+
+//================================================== THIS IS ALL THE ARGUMENT =====================================
 
 
 public Case[][] Tab;

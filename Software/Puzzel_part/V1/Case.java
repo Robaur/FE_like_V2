@@ -17,7 +17,7 @@ public Case(){
   this.cordonner[0]=0;
   this.cordonner[1]=0;
   this.cordonner[2]=0;
-  this.type=0;
+  this.type='O';
 }
 
 public Case(int x, int y){
@@ -26,7 +26,7 @@ public Case(int x, int y){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=0;
-  this.type=0;
+  this.type='O';
 }
 
 public Case(int x, int y,int z){
@@ -34,9 +34,9 @@ public Case(int x, int y,int z){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=z;
-  this.type=0;
+  this.type='O';
 }
-public Case(int x, int y,int z,int type){
+public Case(int x, int y,int z,char type){
   this.cordonner= new int[3];
   this.cordonner[0]=x;
   this.cordonner[1]=y;
@@ -49,30 +49,24 @@ public Case(int x, int y,int z,int type){
 //}
 
 //================================================= THIS IS ALL THE FUNCTION ============================
-public AttribBOY(Character BOY){
+public void AttribBOY(Character BOY){
 	this.Boy=BOY;
 	this.type=BOY.ReturnREP();
 	}
 
 
-/*
-private chagType (int type){
-
-  this.type=type;
-
-}
 
 
-public PrintCase(){
-  System.out.print("["+this.type+"]");
-}
-
-*/
+public void ChangeCaseCharact(Case Out){  // assez proche de AttribBOY !!!!!!!
+	Out.Character.CopyCharacter(this.Character);
+	Character Remplissage = new Character();
+	this.Character.CopyCharacter(Remplissage);
+	}
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
 public int[] cordonner;
-public int type; // this is the tape of the ground   change in private 
+public char type; // this is the tape of the ground   change in private 
 public Character Boy;
 
 }

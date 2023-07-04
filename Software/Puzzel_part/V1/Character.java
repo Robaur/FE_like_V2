@@ -5,7 +5,7 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
-private class Character{
+public class Character{
 
 
 //================================================= THIS IS ALL THE WAY TO BUILD A CHARACTER ============================
@@ -16,19 +16,32 @@ public Character(String Name){
 }
 
 public Character(){
-	this.Name="Igor";
-	this.rep='I';
+	this.Name="";
+	this.rep='O';
 	}
 	
-
+public Character(char test){
+	this.Name="Igore";
+	this.rep=test;
+	
+	
+	}
+	
 //================================================= THIS IS ALL THE FUNCTION ============================
 
 
-public ReturnREP(){
+public char ReturnREP(){
 	return(this.rep);	
 	}
+	
+public String ReturnName(){
+	return(this.Name);
+	}	
 
-
+public void CopyCharacter(Character Copied){
+	this.Name=Copied.ReturnName();
+	this.rep=Copied.ReturnREP();
+	}
 
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
