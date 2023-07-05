@@ -17,7 +17,7 @@ public Case(){
   this.cordonner[0]=0;
   this.cordonner[1]=0;
   this.cordonner[2]=0;
-  this.type='O';
+  this.type=this.RNGchoiceGround();
   this.Boy =null;
   this.selector =null;
 }
@@ -28,7 +28,7 @@ public Case(int x, int y){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=0;
-  this.type='O';
+  this.type=this.RNGchoiceGround();
   this.Boy =null;
   this.selector =null;
 }
@@ -38,6 +38,7 @@ public Case(int x, int y,int z){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=z;
+  this.type='.';
   this.Boy =null;
   this.selector =null;
 }
@@ -83,10 +84,22 @@ public void ChangeCaseCharact(Case Out){  // assez proche de AttribBOY !!!!!!!
 	
 	}
 
-public void RenamingCase(){
-	if (this.Boy==null){this.type='O';}
+public void RenamingCase(){   // FONCTION DE MERDE QUI NE SERRE A RIEN ET QU'IL FAUT ENLEVER !!! SOURCE DE FUTUR BUG !!!
+	if (this.Boy==null){this.type='.';}
 	else {this.type=this.Boy.ReturnREP();}
 	}	
+
+//============= RNG GROUND FUCNTION ===
+
+
+public char RNGchoiceGround(){
+	if (Math.random()<0.05){
+		return(',');
+		}
+	else{return('.');}
+	}
+
+
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 

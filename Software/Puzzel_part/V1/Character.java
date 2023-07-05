@@ -18,7 +18,7 @@ public Character(String Name){
 
 public Character(){
 	this.Name="";
-	this.rep='O';
+	this.rep='0';
 	this.Stat= new Statistique();
 	}
 	

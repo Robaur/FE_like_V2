@@ -5,6 +5,8 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
+import java.lang.Math;
+
 public class main{
 	
   public static void main(String []args){
