@@ -13,17 +13,19 @@ public class Character{
 
 public Character(String Name){
   this.Name=Name;
+  this.Stat= new Statistique();
 }
 
 public Character(){
 	this.Name="";
 	this.rep='O';
+	this.Stat= new Statistique();
 	}
 	
 public Character(char test){
 	this.Name="Igore";
 	this.rep=test;
-	
+	this.Stat= new Statistique();
 	
 	}
 	
@@ -52,7 +54,7 @@ public void CopyCharacter(Character Copied){
   private String Name;
   private char rep;
   //private School school;
-  //private Statistique Stat;
+  private Statistique Stat;
   //private Case Position; SEMBLE ETRE PAS MAL DE LA MERDE >CETTE LIGNE
   //private SkillPool skills;
   //private Persona Perso;

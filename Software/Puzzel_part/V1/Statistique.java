@@ -5,35 +5,48 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
-private class Statistique{
+public class Statistique{
+	
+	
+	
+//================================================= THIS IS ALL THE WAY TO BUILD A STATISTIQUE ============================	
 
-private Statistique(){
-  this.Life=1;
-  this.Atk=0;
-  this.Def=0;
-  this.Magic=0;
-  this.Speed=0;
-  this.Moral=0;
-  this.Trust=0;
+
+
+public Statistique(){
+  this.statis= new int[7];
+  for (int k=0;k<7;k++){
+	  this.ChangeCaracK(k,1);
+	  }
 }
 
+public Statistique (int[] stat){
+  this.statis= new int[7];
+  for (int k=0;k<7;k++){
+	  this.ChangeCaracK(k,stat[k]);
+	}
+	}
+	
+
+
+//================================================= THIS IS ALL THE FUNCTION ============================
+
+
+public void ChangeCaracK(int k,int NewVal){
+		this.statis[k]=NewVal;
+	}
 
 
 
+//================================================== THIS IS ALL THE ARGUMENT =====================================
 
 
-
-
-
-
-
-
-
-  private int Life;
-  private int Atk;
-  private int Def;
-  private int Magic;
-  private int Speed;
-  private int Moral;
-  private int Trust;
+  //private int Life;
+  //private int Atk;
+  //private int Def;
+  //private int Magic;
+  //private int Speed;
+  //private int Moral;
+  //private int Trust;
+  private int[] statis;
 }

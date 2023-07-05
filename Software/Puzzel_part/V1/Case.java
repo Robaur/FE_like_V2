@@ -18,7 +18,8 @@ public Case(){
   this.cordonner[1]=0;
   this.cordonner[2]=0;
   this.type='O';
-  this.Boy =new Character();
+  this.Boy =null;
+  this.selector =null;
 }
 
 public Case(int x, int y){
@@ -28,7 +29,8 @@ public Case(int x, int y){
   this.cordonner[1]=y;
   this.cordonner[2]=0;
   this.type='O';
-  this.Boy =new Character();
+  this.Boy =null;
+  this.selector =null;
 }
 
 public Case(int x, int y,int z){
@@ -36,7 +38,8 @@ public Case(int x, int y,int z){
   this.cordonner[0]=x;
   this.cordonner[1]=y;
   this.cordonner[2]=z;
-  this.Boy =new Character();
+  this.Boy =null;
+  this.selector =null;
 }
 public Case(int x, int y,int z,char type){
   this.cordonner= new int[3];
@@ -44,7 +47,8 @@ public Case(int x, int y,int z,char type){
   this.cordonner[1]=y;
   this.cordonner[2]=z;
   this.type=type;
-  this.Boy =new Character();
+  this.Boy =null;
+  this.selector =null;
 }
 
 //public Case(int[2] posit,int class){
@@ -53,6 +57,7 @@ public Case(int x, int y,int z,char type){
 
 //================================================= THIS IS ALL THE FUNCTION ============================
 public void AttribBOY(Character BOY){
+	this.Boy=new Character();
 	this.Boy=BOY;
 	this.type=BOY.ReturnREP();
 	}
@@ -60,17 +65,33 @@ public void AttribBOY(Character BOY){
 
 
 
+// this function change the last value of coordonne, if it is 1: the case is Occuped else not
+public void ChangOccupat(int occup){  
+	if (this.cordonner[2]==occup){}
+	else {this.cordonner[2]=occup;}
+	}
+
+
 public void ChangeCaseCharact(Case Out){  // assez proche de AttribBOY !!!!!!!
+	Out.Boy =new Character();
 	Out.Boy.CopyCharacter(this.Boy);
-	Character Remplissage = new Character(); // Ne marche pas
-	this.Boy.CopyCharacter(Remplissage);
+	Out.ChangOccupat(1);
+	this.ChangOccupat(0);
+	this.Boy=null;
+	this.RenamingCase();
+	Out.RenamingCase();
 	
 	}
+
+public void RenamingCase(){
+	if (this.Boy==null){this.type='O';}
+	else {this.type=this.Boy.ReturnREP();}
+	}	
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
 public int[] cordonner;
 public char type; // this is the tape of the ground   change in private 
 public Character Boy;
-
+public Cursor selector;
 }

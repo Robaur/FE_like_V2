@@ -2,7 +2,7 @@ public class Game{
 
 public Game(){
   this.NameGame="FE_Like";
-  this.turn=Turn();
+  this.MomentGame=new Turn();
 }
 
 public End_Game(){}

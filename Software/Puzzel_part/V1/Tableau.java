@@ -20,6 +20,10 @@ public Tableau(){
   this.size = new int[2];
   this.changeIntSize(20,0);
   this.changeIntSize(20,1);
+  this.Tab[0][0].selector=new Cursor();
+  this.CursorPOS= new int[2];
+  this.CursorPOS[0]=0;
+  this.CursorPOS[1]=0;
 }
 
 public Tableau(int n){
@@ -52,7 +56,11 @@ public void PrintTab(){
   for(int i=0;i<this.size[0];i++){
 	  System.out.print("\n");
     for(int j=0;j<this.size[1];j++){
-		System.out.print("["+this.Tab[i][j].Boy.ReturnREP()+"]");
+		if (this.Tab[i][j].selector==null){System.out.print("["+this.Tab[i][j].type+"]");}
+		else{
+			System.out.print(this.Tab[i][j].selector.ReturnBRAND()
+			+this.Tab[i][j].type
+			+this.Tab[i][j].selector.ReturnBRAND());}
     }
   }
   System.out.print("\n");
@@ -64,6 +72,7 @@ public void changeIntSize(int n,int sizeplace){
 	}
 public void PoppingChar(int x,int y,Character BOY){
 	this.Tab[x][y].AttribBOY(BOY);
+	this.Tab[x][y].ChangOccupat(1);
 	}
 
 public void Depla_1_BOY(int x, int y,int order){ 
@@ -83,9 +92,17 @@ public void Depla_1_BOY(int x, int y,int order){
 		}
 	}
 
+public void CursorPopping(int x,int y){ // est en tain de faire le deplacement du curseur
+	this.Tab[CursorPOS[0]][CursorPOS[1]].selector=null;
+	this.Tab[x][y].selector=new Cursor();
+	this.CursorPOS[0]=x;
+	this.CursorPOS[1]=y;
+	}	
+
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
 
 public Case[][] Tab;
 private int[] size;
+private int[] CursorPOS;
 }
