@@ -58,7 +58,7 @@ public void PrintTab(){
     for(int j=0;j<this.size[1];j++){
 		if (this.Tab[i][j].selector==null){System.out.print("["+this.Tab[i][j].type+"]");}
 		else{
-			System.out.print(this.Tab[i][j].selector.ReturnBRAND()
+			System.out.print(""+this.Tab[i][j].selector.ReturnBRAND()   // la liste vide fixe le polymorphisme
 			+this.Tab[i][j].type
 			+this.Tab[i][j].selector.ReturnBRAND());}
     }
@@ -98,6 +98,35 @@ public void CursorPopping(int x,int y){ // est en tain de faire le deplacement d
 	this.CursorPOS[0]=x;
 	this.CursorPOS[1]=y;
 	}	
+	
+public void ChangeCursorPOS(int x,int y){
+	this.CursorPOS[0]=x;
+	this.CursorPOS[1]=y;
+	}	
+
+
+
+public void CursorDepla(int order){
+	switch(order){
+		case 0:
+			this.CursorPopping(this.CursorPOS[0],this.CursorPOS[1]+1);
+			this.ChangeCursorPOS(this.CursorPOS[0],this.CursorPOS[1]+1);
+			break;
+		case 1:
+			this.CursorPopping(this.CursorPOS[0]-1,this.CursorPOS[1]);
+			this.ChangeCursorPOS(this.CursorPOS[0]-1,this.CursorPOS[1]);
+			break;
+		case 2:
+			this.CursorPopping(this.CursorPOS[0],this.CursorPOS[1]-1);
+			this.ChangeCursorPOS(this.CursorPOS[0],this.CursorPOS[1]-1);
+			break;
+		case 3:
+			this.CursorPopping(this.CursorPOS[0]+1,this.CursorPOS[1]);
+			this.ChangeCursorPOS(this.CursorPOS[0]+1,this.CursorPOS[1]+1);
+			break;
+		
+		}
+	}
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
