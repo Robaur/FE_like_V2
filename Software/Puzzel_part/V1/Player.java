@@ -35,7 +35,7 @@ public boolean Testwaiter(){
 
 public void ADDwaiter_IN_Team(){
 	if(this.Team.length==1){
-		this.Team[0]=this.waiter;
+		this.waiter.COPYCharacterIN(this.Team[0]);
 		this.waiter=null;
 		}
 		
@@ -56,11 +56,17 @@ public void ChangeTeam(Character[] groupe){
 		}
 	}
 
+public Character[] ReturnTEAM(){
+	return(this.Team);
+	}
 
 //============== PRINT ==========
 
 public void PrintTeam(){
-	
+	System.out.print("ok");
+	for (int k=0;0<this.Team.length;k++){
+		this.Team[0].PrintCharac();
+		}
 	}	
 
 

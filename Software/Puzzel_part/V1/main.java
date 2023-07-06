@@ -20,8 +20,11 @@ public class main{
   Tab.PrintTab();
   Tab.Depla_1_BOY(1,1,1);
   Tab.PrintTab();
-  Igor.ReturnSTAT().PrintStat();
-    Igor.ReturnSTAT().PrintStat(1);
+  Igor.PrintCharac();
+  Player BOB = new Player("BOB");
+  Character Alex =new Character(BOB);
+  BOB.ADDwaiter_IN_Team();
+  BOB.PrintTeam();
 }
 
 //private Game Gaming;

@@ -32,10 +32,11 @@ public Character(char test){
 	}
 
 public Character(Player P1){
-	this.Name="Igore";
-	this.rep='I';
+	this.Name="Alex";
+	this.rep='A';
 	this.Stat= new Statistique();
 	this.P=P1;
+	P1.SETwaiter(this);
 	}
 	
 //================================================= THIS IS ALL THE FUNCTION ============================
@@ -72,9 +73,19 @@ public boolean Rustered (Player P){
 public Player ReturnPLAYER(){
 	return(this.P);}
 
+public void COPYCharacterIN(Character Out){
+	if(Out==null){Out = new Character();}
+		Out.Name=this.Name;
+		Out.rep=this.rep;
+		Out.Stat=this.Stat;
+		Out.P=this.P;
+	}	
+
 //============== PRINT ==========
 
 public void PrintCharac(){
+	System.out.print("\n"+this.ReturnName()+"\n");
+	this.ReturnSTAT().PrintStat(1);
 	}
 	
 
