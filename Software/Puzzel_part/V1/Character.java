@@ -49,7 +49,9 @@ public String ReturnName(){
 	return(this.Name);
 	}	
 	
-	
+public Statistique ReturnSTAT(){
+	return(this.Stat);
+	}	
 	
 
 public void CopyCharacter(Character Copied){

@@ -30,7 +30,7 @@ public void SETwaiter(Character Boy){
 
 public boolean Testwaiter(){
 	if (this.waiter==null){return(true);}
-	else {return(false);};
+	else {return(false);}
 	}
 
 public void ADDwaiter_IN_Team(){
@@ -40,7 +40,7 @@ public void ADDwaiter_IN_Team(){
 		}
 		
 	else {
-		groupe= new Character[this.Team.length+1];
+		Character[] groupe = new Character[this.Team.length+1];
 			for (int k=0;k<this.Team.length;k++){
 				groupe[k]=this.Team[k];
 			}
@@ -59,7 +59,9 @@ public void ChangeTeam(Character[] groupe){
 
 //============== PRINT ==========
 
-public void PrintTeam(){}	
+public void PrintTeam(){
+	
+	}	
 
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================	

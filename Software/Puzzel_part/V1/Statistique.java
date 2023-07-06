@@ -43,6 +43,47 @@ public boolean verifDEATH(){
 	if(this.CaracK(0)<1){return(true);}
 	else {return(false);}
 	} 
+	
+
+public void PrintStat(){
+	System.out.print(
+	"Life :"+this.CaracK(0)+"\n"+
+	"Atk :"+this.CaracK(1)+"\n"+
+	"Def :"+this.CaracK(2)+"\n"+
+	"Magic :"+this.CaracK(3)+"\n"+
+	"Speed :"+this.CaracK(4)+"\n"+
+	"Moral :"+this.CaracK(5)+"\n"
+	);
+	}	
+	
+public void PrintStat(int choice){ // choice how print it
+	switch(choice){
+		case 0:	
+			System.out.print(
+			"Life :"+this.CaracK(0)+"\n"+
+			"Atk :"+this.CaracK(1)+"\n"+
+			"Def :"+this.CaracK(2)+"\n"+
+			"Magic :"+this.CaracK(3)+"\n"+
+			"Speed :"+this.CaracK(4)+"\n"+
+			"Moral :"+this.CaracK(5)+"\n"
+			);
+			break;
+		case 1:
+			System.out.print(
+			"Life Atk Def Magic Speed Moral"+"\n"+"   "+
+			+this.CaracK(0)+"   "
+			+this.CaracK(1)+"   "
+			+this.CaracK(2)+"   "
+			+this.CaracK(3)+"   "
+			+this.CaracK(4)+"   "
+			+this.CaracK(5)+"   "
+			+"\n"
+			);
+			break;
+		default:
+			break;
+	}	
+}	
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
