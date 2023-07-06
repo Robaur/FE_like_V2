@@ -35,8 +35,14 @@ public Statistique (int[] stat){
 public void ChangeCaracK(int k,int NewVal){
 		this.statis[k]=NewVal;
 	}
+public int CaracK(int k){
+	return(this.statis[k]);
+	}
 
-
+public boolean verifDEATH(){
+	if(this.CaracK(0)<1){return(true);}
+	else {return(false);}
+	} 
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 

@@ -14,12 +14,14 @@ public class Character{
 public Character(String Name){
   this.Name=Name;
   this.Stat= new Statistique();
+  this.P=null;
 }
 
 public Character(){
 	this.Name="";
 	this.rep='0';
 	this.Stat= new Statistique();
+	this.P=null;
 	}
 	
 public Character(char test){
@@ -27,6 +29,13 @@ public Character(char test){
 	this.rep=test;
 	this.Stat= new Statistique();
 	
+	}
+
+public Character(Player P1){
+	this.Name="Igore";
+	this.rep='I';
+	this.Stat= new Statistique();
+	this.P=P1;
 	}
 	
 //================================================= THIS IS ALL THE FUNCTION ============================
@@ -49,6 +58,31 @@ public void CopyCharacter(Character Copied){
 	}
 
 
+public boolean Rustered (Player P){
+	if (P.Testwaiter()==true){
+		P.SETwaiter(this);
+		this.P=P;
+		return(true);
+		}
+	else{return(false);}
+	}	
+
+public Player ReturnPLAYER(){
+	return(this.P);}
+
+//============== PRINT ==========
+
+public void PrintCharac(){
+	}
+	
+
+//===== Fight Part ===============
+
+public void Dommage(Character Defender){}
+
+
+
+
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
   private String Name;
@@ -59,4 +93,5 @@ public void CopyCharacter(Character Copied){
   //private SkillPool skills;
   //private Persona Perso;
   //private Stuff stuff; 
+  private Player P;
 }

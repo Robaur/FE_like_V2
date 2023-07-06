@@ -52,6 +52,11 @@ public Tableau(int n,int m){
 
 
 //================================================= THIS IS ALL THE METHODE ============================
+
+
+
+//============== PRINT ==========
+
 public void PrintTab(){
   for(int i=0;i<this.size[0];i++){
 	  System.out.print("\n");
@@ -65,6 +70,11 @@ public void PrintTab(){
   }
   System.out.print("\n");
 }
+
+
+
+//============== DEPLA ==========
+
 
 public void changeIntSize(int n,int sizeplace){
 	this.size[sizeplace]=n;

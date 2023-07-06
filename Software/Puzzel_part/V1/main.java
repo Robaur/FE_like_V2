@@ -20,6 +20,7 @@ public class main{
   Tab.PrintTab();
   Tab.Depla_1_BOY(1,1,1);
   Tab.PrintTab();
+  
 
 }
 

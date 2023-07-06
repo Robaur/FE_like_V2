@@ -87,7 +87,9 @@ public void ChangeCaseCharact(Case Out){  // assez proche de AttribBOY !!!!!!!
 public void RenamingCase(){   // FONCTION DE MERDE QUI NE SERRE A RIEN ET QU'IL FAUT ENLEVER !!! SOURCE DE FUTUR BUG !!!
 	if (this.Boy==null){this.type='.';}
 	else {this.type=this.Boy.ReturnREP();}
-	}	
+	}
+	
+		
 
 //============= RNG GROUND FUCNTION ===
 
@@ -98,6 +100,18 @@ public char RNGchoiceGround(){
 		}
 	else{return('.');}
 	}
+
+
+
+
+//============== COMBAT/ HEAL ==========
+
+public int OtherCharacDetector(Case Out){
+	if(Out.Boy==null){return(0);} // open place 
+	else if (Out.Boy.ReturnPLAYER()==this.Boy.ReturnPLAYER()){return(1);} // already have a friend's unite 
+	else {return(2);} // already have an ennemi's unite 
+	}
+
 
 
 
