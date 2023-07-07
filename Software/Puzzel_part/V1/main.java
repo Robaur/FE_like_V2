@@ -24,6 +24,7 @@ public class main{
   Player BOB = new Player("BOB");
   Character Alex =new Character(BOB);
   BOB.ADDwaiter_IN_Team();
+  //BOB.OUTSETwaiter();
   BOB.PrintTeam();
 }
 

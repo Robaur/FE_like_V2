@@ -42,6 +42,67 @@ public Character(Player P1){
 //================================================= THIS IS ALL THE FUNCTION ============================
 
 
+
+public boolean Rustered (Player P){
+	if (P.Testwaiter()==true){
+		P.SETwaiter(this);
+		this.P=P;
+		return(true);
+		}
+	else{return(false);}
+	}	
+
+/*
+
+public Character COPYCharacter(){
+		System.out.print("MATMATTA");
+		Character bob =new Character();
+		bob.Name=this.Name;
+		bob.rep=this.rep;
+		bob.Stat=this.Stat;
+		bob.P=this.P;
+		return(bob);
+		
+	}
+	*/	
+
+public void CopyCharacter(Character Copied){
+	this.Name=Copied.ReturnName();
+	this.rep=Copied.ReturnREP();
+	this.Stat=Copied.ReturnSTAT();
+	this.P=Copied.ReturnPLAYER();
+	}
+
+
+
+
+
+//============== PRINT ==========
+
+public void PrintCharac(){
+	System.out.print("\n"+this.ReturnName()+"\n");
+	this.ReturnSTAT().PrintStat(1);
+	}
+	
+
+
+
+
+
+
+//===== Fight Part ===============
+
+public void Dommage(Character Defender){}
+
+
+
+
+
+
+
+
+//=====   RETURN ARGU
+
 public char ReturnREP(){
 	return(this.rep);	
 	}
@@ -53,48 +114,9 @@ public String ReturnName(){
 public Statistique ReturnSTAT(){
 	return(this.Stat);
 	}	
-	
-
-public void CopyCharacter(Character Copied){
-	this.Name=Copied.ReturnName();
-	this.rep=Copied.ReturnREP();
-	}
-
-
-public boolean Rustered (Player P){
-	if (P.Testwaiter()==true){
-		P.SETwaiter(this);
-		this.P=P;
-		return(true);
-		}
-	else{return(false);}
-	}	
 
 public Player ReturnPLAYER(){
 	return(this.P);}
-
-public void COPYCharacterIN(Character Out){
-	if(Out==null){Out = new Character();}
-		Out.Name=this.Name;
-		Out.rep=this.rep;
-		Out.Stat=this.Stat;
-		Out.P=this.P;
-	}	
-
-//============== PRINT ==========
-
-public void PrintCharac(){
-	System.out.print("\n"+this.ReturnName()+"\n");
-	this.ReturnSTAT().PrintStat(1);
-	}
-	
-
-//===== Fight Part ===============
-
-public void Dommage(Character Defender){}
-
-
-
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 

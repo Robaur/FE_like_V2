@@ -27,16 +27,22 @@ public Player(){
 public void SETwaiter(Character Boy){
 	this.waiter=Boy;
 	}
+public void OUTSETwaiter(){
+	this.waiter=null;
+	};
 
 public boolean Testwaiter(){
 	if (this.waiter==null){return(true);}
 	else {return(false);}
 	}
 
-public void ADDwaiter_IN_Team(){
+public void ADDwaiter_IN_Team(){ 
 	if(this.Team.length==1){
-		this.waiter.COPYCharacterIN(this.Team[0]);
-		this.waiter=null;
+		this.waiter.PrintCharac(); // tersdt 
+		//this.waiter.COPYCharacterIN(this.Team[0]); // problem !!!!!
+		Character setter= new Character();
+		setter.CopyCharacter(this.waiter);
+		this.Team[0].CopyCharacter(setter);
 		}
 		
 	else {
