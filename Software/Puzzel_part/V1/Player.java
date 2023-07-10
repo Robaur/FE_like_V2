@@ -40,9 +40,10 @@ public void ADDwaiter_IN_Team(){
 	if(this.Team.length==1){
 		this.waiter.PrintCharac(); // tersdt 
 		//this.waiter.COPYCharacterIN(this.Team[0]); // problem !!!!!
-		Character setter= new Character();
-		setter.CopyCharacter(this.waiter);
-		this.Team[0].CopyCharacter(setter);
+		if(this.Team[0]==null){
+			System.out.print("WAGGGG!!!");
+			this.Team[0]=new Character();}
+		this.Team[0].CopyCharacter(this.waiter);
 		}
 		
 	else {
@@ -69,9 +70,8 @@ public Character[] ReturnTEAM(){
 //============== PRINT ==========
 
 public void PrintTeam(){
-	System.out.print("ok");
-	for (int k=0;0<this.Team.length;k++){
-		this.Team[0].PrintCharac();
+	for (int k=0;k<this.Team.length;k++){
+		this.Team[k].PrintCharac();
 		}
 	}	
 

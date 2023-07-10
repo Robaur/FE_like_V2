@@ -102,15 +102,15 @@ public void Depla_1_BOY(int x, int y,int order){
 		}
 	}
 
-public void CursorPopping(int x,int y){ // est en tain de faire le deplacement du curseur
+public void CursorPopping(int x,int y){ // est en tain de faire le deplacement du curseur   
 	this.Tab[CursorPOS[0]][CursorPOS[1]].selector=null;
 	this.Tab[x][y].selector=new Cursor();
-	this.CursorPOS[0]=x;
+	this.CursorPOS[0]=x; 
 	this.CursorPOS[1]=y;
 	}	
 	
-public void ChangeCursorPOS(int x,int y){
-	this.CursorPOS[0]=x;
+public void ChangeCursorPOS(int x,int y){   
+	this.CursorPOS[0]=x;  
 	this.CursorPOS[1]=y;
 	}	
 

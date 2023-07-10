@@ -6,6 +6,24 @@
 //
 //============================================================================//
 import java.lang.Math;
+import java.util.Scanner;
+
+
+/*
+ * 	ORDER TASK 
+ * 
+ * // Make the imput class good 
+ * / Creat the right imput for moving rightly the cursor on the tab 
+ *  Make the fight 
+ * import weapon -----> build the object
+ * import the heal
+ * build Class
+ * build Basic class, Assassin/Wizard/Warrior  
+ * import the genaral power 
+ * built Actif/Passif/Persona 
+ * 
+ */
+
 
 public class main{
 	
@@ -24,9 +42,11 @@ public class main{
   Player BOB = new Player("BOB");
   Character Alex =new Character(BOB);
   BOB.ADDwaiter_IN_Team();
-  //BOB.OUTSETwaiter();
   BOB.PrintTeam();
+  
+  
 }
 
 //private Game Gaming;
 }
+
