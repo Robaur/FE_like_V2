@@ -7,6 +7,7 @@
 //============================================================================//
 import java.lang.Math;
 import java.util.Scanner;
+import javax.swing.JFrame;
 
 
 /*
@@ -28,7 +29,7 @@ import java.util.Scanner;
 public class main{
 	
   public static void main(String []args){
-  //this.Gaming=new Game();
+  Game game=new Game();
   //this.Gaming.MomentGame.Tab.PrintTab();
   
   Tableau Tab = new Tableau();
@@ -44,9 +45,10 @@ public class main{
   BOB.ADDwaiter_IN_Team();
   BOB.PrintTeam();
   
-  
 }
 
-//private Game Gaming;
+	
+
+
 }
 
