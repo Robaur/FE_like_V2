@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-13T07:57:02.800Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="VlokXKqSQii758WlgRjE" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-13T08:07:16.661Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="roJLI6eq2scVUvfK7GdV" version="21.5.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4099" dy="1288" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3051" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -427,27 +427,30 @@
           <mxGeometry y="138" width="330" height="78" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-0" value="Capacity" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="870" y="960" width="160" height="218" as="geometry">
+          <mxGeometry x="870" y="960" width="160" height="324" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-1" value="Name String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
           <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="H7VU5NTEADVnCcT7ZfVg-11" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
-          <mxGeometry y="70" width="160" height="30" as="geometry" />
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-33" value="&lt;div&gt;Int flavor&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;go in the files flavor and take the falvor associed to the number in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
+          <mxGeometry y="70" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-11" value="Int Hardness &lt;br&gt;the level min where the charac can learn it " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
+          <mxGeometry y="140" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
-          <mxGeometry y="100" width="160" height="8" as="geometry" />
+          <mxGeometry y="200" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-3" value="Capacity() Creat the capaity" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
-          <mxGeometry y="108" width="160" height="38" as="geometry" />
+          <mxGeometry y="208" width="160" height="38" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-12" value="Death() destroy the capacity" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
-          <mxGeometry y="146" width="160" height="30" as="geometry" />
+          <mxGeometry y="246" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-4" value="Return" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-0">
-          <mxGeometry y="176" width="160" height="38" as="geometry" />
+          <mxGeometry y="276" width="160" height="38" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="H7VU5NTEADVnCcT7ZfVg-0" target="eY1XQNZ8jxYmsoM6EKJw-19">
           <mxGeometry relative="1" as="geometry">
@@ -455,59 +458,68 @@
             <mxPoint x="850" y="770" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="H7VU5NTEADVnCcT7ZfVg-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="H7VU5NTEADVnCcT7ZfVg-13">
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="H7VU5NTEADVnCcT7ZfVg-13" target="H7VU5NTEADVnCcT7ZfVg-0">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="920" y="1180" as="targetPoint" />
+            <mxPoint x="920" y="1280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-13" value="Actif" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="760" y="1240" width="160" height="218" as="geometry">
+          <mxGeometry x="760" y="1440" width="160" height="306" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-14" value="Name String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
           <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="H7VU5NTEADVnCcT7ZfVg-15" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
-          <mxGeometry y="70" width="160" height="30" as="geometry" />
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-36" value="&lt;div&gt;Int flavor&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;go in the files flavor and take the falvor associed to the number in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
+          <mxGeometry y="70" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-15" value="Int Hardness &lt;br&gt;the level min where the charac can learn it " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
+          <mxGeometry y="140" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-16" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
-          <mxGeometry y="100" width="160" height="8" as="geometry" />
+          <mxGeometry y="190" width="160" height="12" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-17" value="Capacity() Creat the capaity" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
-          <mxGeometry y="108" width="160" height="38" as="geometry" />
+          <mxGeometry y="202" width="160" height="36" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-18" value="Death() destroy the capacity" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
-          <mxGeometry y="146" width="160" height="30" as="geometry" />
+          <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-19" value="Return" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-13">
-          <mxGeometry y="176" width="160" height="38" as="geometry" />
+          <mxGeometry y="268" width="160" height="38" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="H7VU5NTEADVnCcT7ZfVg-20" target="H7VU5NTEADVnCcT7ZfVg-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-20" value="Passif" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1000" y="1240" width="160" height="218" as="geometry">
+          <mxGeometry x="1000" y="1440" width="160" height="334" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-21" value="Name String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
           <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="H7VU5NTEADVnCcT7ZfVg-22" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
-          <mxGeometry y="70" width="160" height="30" as="geometry" />
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-35" value="&lt;div&gt;Int flavor&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;go in the files flavor and take the falvor associed to the number in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
+          <mxGeometry y="70" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-22" value="Int Hardness &lt;br&gt;the level min where the charac can learn it " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
+          <mxGeometry y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H7VU5NTEADVnCcT7ZfVg-31" value="Int[] charac changed" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
+          <mxGeometry y="190" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
-          <mxGeometry y="100" width="160" height="8" as="geometry" />
+          <mxGeometry y="220" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-24" value="Capacity() Creat the capaity" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
-          <mxGeometry y="108" width="160" height="38" as="geometry" />
+          <mxGeometry y="228" width="160" height="38" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-25" value="Death() destroy the capacity" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
-          <mxGeometry y="146" width="160" height="30" as="geometry" />
+          <mxGeometry y="266" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="H7VU5NTEADVnCcT7ZfVg-26" value="Return" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H7VU5NTEADVnCcT7ZfVg-20">
-          <mxGeometry y="176" width="160" height="38" as="geometry" />
+          <mxGeometry y="296" width="160" height="38" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
