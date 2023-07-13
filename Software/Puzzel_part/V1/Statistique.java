@@ -87,6 +87,7 @@ public void PrintStat(int choice){ // choice how print it
 
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
+// ALL OF THE STATISTIC IS BETWEEN O AND 99, level 1 is around 0->8 in all stat 
 
   //private int Life;
   //private int Atk;

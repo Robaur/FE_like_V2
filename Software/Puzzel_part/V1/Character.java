@@ -74,7 +74,11 @@ public void CopyCharacter(Character Copied){
 	}
 
 
-
+public boolean Verif_Charac_ident_P(Character tested){
+	if (this.P==tested.P){return(true);}
+	else{return(false);}
+	}
+	
 
 
 //============== PRINT ==========
@@ -85,18 +89,45 @@ public void PrintCharac(){
 	}
 	
 
-
-
-
+public void PrintFightStat(Character DEF){
+		//System.out.print(this.name + '\n');
+		//System.out.print("" + this.f)
+		
+	}
 
 
 //===== Fight Part ===============
 
-public void Dommage(Character Defender){}
+public void fight(Character DEF){
+	//this.Verif_Charac_ident_P(DEF);
+	System.out.print(this.Name + ':' +this.CalDommage(DEF,false)+'\n');
+	System.out.print(DEF.Name + ':' +DEF.CalDommage(this,false)+'\n');
+	this.Dommage(DEF);
+	}
+
+
+public void Dommage(Character Defender){  // Apply the dommage \ change the life 
+	this.Stat.ChangeCaracK(0,this.CalDommage(Defender,false));
+	Defender.Stat.ChangeCaracK(0,Defender.CalDommage(this,false));
+	}
 
 
 
-
+public int CalDommage(Character DEF,boolean type_ATK){ // Cal the dommage make
+	
+	int S=this.Stat.CaracK(0);
+	int mode;
+	if(type_ATK==false){  //this boolean is false => physic atk
+		
+		 mode=this.Stat.CaracK(2)-DEF.Stat.CaracK(1);
+		}
+		
+	else{
+		 mode=this.Stat.CaracK(3)-DEF.Stat.CaracK(3);
+		}	
+	if(mode<0){return(S+mode);}
+	else{return(S);}	
+	}
 
 
 
@@ -106,6 +137,7 @@ public void Dommage(Character Defender){}
 public char ReturnREP(){
 	return(this.rep);	
 	}
+	
 	
 public String ReturnName(){
 	return(this.Name);
@@ -124,6 +156,7 @@ public Player ReturnPLAYER(){
   private char rep;
   //private School school;
   private Statistique Stat;
+  private int[] Modificator;
   //private Case Position; SEMBLE ETRE PAS MAL DE LA MERDE >CETTE LIGNE
   //private SkillPool skills;
   //private Persona Perso;

@@ -44,6 +44,9 @@ public class main{
   Character Alex =new Character(BOB);
   BOB.ADDwaiter_IN_Team();
   BOB.PrintTeam();
+  Igor.fight(Alex);
+  BOB.PrintTeam();
+  Igor.PrintCharac();
   
 }
 

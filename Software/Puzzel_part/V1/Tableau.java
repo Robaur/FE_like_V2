@@ -144,4 +144,5 @@ public void CursorDepla(int order){
 public Case[][] Tab;
 private int[] size;
 private int[] CursorPOS;
+//private JFrame Face;
 }
