@@ -5,6 +5,8 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
+import javax.swing.*;
+import java.awt.*;
 
 public class Tableau{
 
@@ -137,12 +139,38 @@ public void CursorDepla(int order){
 		
 		}
 	}
+	
+public void SetPanelTab(){
+	JPanel place =new JPanel();
+	place.setBounds(125,125,250,250);
+	place.setBackground(Color.GREEN);
+	this.Face=place;
+	}
+	
+public void SetPanelTab(Game game){
+		JPanel place =new JPanel();
+		this.Face=place;
+		Rectangle sizeWindow=game.ReturnWindows().getBounds();  // pour re obtenir cela il faut utiliser l'objet rectangle
+		// de plus pour pouvoir utiliser les variblable dans Rectangle il faut utiliser les fonction getX et getY
+		if ( (size[0]*30)+20<=sizeWindow.getX() && (size[1]*30)+20<=sizeWindow.getY() ){
+			this.Face.setBounds(20,20,(size[0]*30),(size[1]*30));
+			}
+			
+		else{
+			this.Face.setBounds(125,125,250,250);
 
+			}
+		//	JPanel bound= new JPanel();   try to found another way to make the grill
+		//for(int k=0;k<size[0];k++){
+		//	}
+	this.Face.setBackground(Color.GREEN);
+	game.ReturnWindows().add(this.Face);
+	}
 //================================================== THIS IS ALL THE ARGUMENT =====================================
 
 
 public Case[][] Tab;
 private int[] size;
 private int[] CursorPOS;
-//private JFrame Face;
+private JPanel Face;
 }

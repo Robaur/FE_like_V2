@@ -7,7 +7,8 @@
 //============================================================================//
 import java.lang.Math;
 import java.util.Scanner;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 
 /*
@@ -47,7 +48,8 @@ public class main{
   Igor.fight(Alex);
   BOB.PrintTeam();
   Igor.PrintCharac();
-  
+  Tab.SetPanelTab(game);
+  game.PrintWindows();
 }
 
 	

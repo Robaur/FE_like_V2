@@ -5,7 +5,7 @@
 //If you want more information, go see https://github.com/Robaur/FE_like_V2
 //
 //============================================================================//
-import javax.swing.JFrame;
+import javax.swing.*;
 
 
 public class Game{
@@ -16,7 +16,7 @@ public Game(){
   
   this.Window =new JFrame();
   this.Window.setSize(1000,1000);
-  this.Window.setVisible(true);
+  //this.Window.setVisible(true);
   this.Window.setTitle("Fire Emblem and the war of the twelve's Overlord");
   this.Window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
@@ -29,9 +29,20 @@ public void End_Game(){
 	
 public void Call_Menu(){}
 
+public JFrame ReturnWindows(){
+	return(this.Window);}
+	
+	
+public void PrintWindows(){
+	this.Window.setLayout(null);
+	this.Window.setVisible(true);
+	}
+	
+	
 private String NameGame;
 //private Turn MomentGame;
 private Player[] PlayerInGame;
 private JFrame Window;
+//private int[] sizeWindow;
 
 }
